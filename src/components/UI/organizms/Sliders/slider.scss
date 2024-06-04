@@ -1,0 +1,155 @@
+.recomended__slider {
+  display: flex;
+  position: relative;
+  // align-items: center;
+  // justify-items: safe;
+  align-items: safe;
+  justify-content: space-between;
+  width: 100%;
+  // height: 90vh;
+  padding: 20px 0;
+  height: min-content;
+
+  .recomended__left {
+    display: flex;
+    // flex-direction: column;
+    // align-items: center;
+    // justify-content: center;
+    position: relative;
+    width: 33%;
+    // height: 100%;
+    height: 540px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
+    img {
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease;
+      border-radius: 13px;
+      position: absolute;
+      // top: 0;
+      // left: 0;
+      width: 100%;
+      height: 100%;
+      // object-fit: cover;
+    }
+
+    // .recomended__btn {
+    //   padding: 10px 20px;
+    //   border-radius: 5px;
+    //   background-color: var(--color-1);
+    //   color: var(--color-8);
+    //   border: none;
+    //   cursor: pointer;
+    //   transition: all 0.3s ease;
+    //   position: absolute;
+    //   width: 90%;
+    //   left: 5%;
+    //   bottom: 80px;
+    //   &:hover {
+    //     background-color: var(--color-8);
+    //     color: var(--color-1);
+    //     // z-index: 2;
+    //   }
+    // }
+  }
+
+  .recomended__right {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    height: 540px;
+
+    .recomended__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // justify-content: center;
+      // text-align: center;
+      // justify-content: center;
+      height: 50%;
+      overflow: hidden;
+      color: var(--color-1);
+      h1 {
+        width: 700px;
+        font-size: 48px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        height: min-content;
+        text-align: center;
+      }
+      p {
+        width: 700px;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: justify;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        // height: max-content;
+        // overflow: hidden;
+        // text-indent: 100%; white-space: nowrap; overflow: hidden;
+      }
+    }
+
+    .recomended__books {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      height: 50%;
+
+      .slider {
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        width: 600px;
+        height: 100%;
+        border-radius: 15px;
+
+        &__books {
+          display: flex;
+          // transition: all 0.3s ease;
+          padding: 0 5px;
+          gap: 10px;
+          // justify-content: center;
+          // align-items: center;
+          position: absolute;
+          // left: -200px;
+          // box-shadow: inset 0 0 8px black;
+        }
+      }
+
+      img {
+        width: 190px;
+        height: 270px;
+        border-radius: 15px;
+        // margin-right: 10px;
+      }
+    }
+  }
+
+  .arrow__left {
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    scale: 2;
+    color: var(--color-1);
+    rotate: 90deg;
+    left: -50px;
+  }
+
+  .arrow__right {
+    border-radius: 50%;
+    color: var(--color-1);
+    position: absolute;
+    rotate: -90deg;
+    top: 50%;
+    scale: 2;
+    right: -50px;
+  }
+}

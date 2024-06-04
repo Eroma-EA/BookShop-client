@@ -1,0 +1,61 @@
+@import "./styles/home.scss";
+@import "./styles/about.scss";
+@import "./styles/contacts.scss";
+@import "./styles/categories.scss";
+@import "./styles/card_page.scss";
+@import "./styles/login.scss";
+@import "./styles/mixin.scss";
+
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --color-1: #34374c;
+  --color-2: #424667;
+  --color-3: #5c5e89;
+  --color-4: #8589c3;
+  --color-5: #aeb2e8;
+  --color-6: #d7d9f1;
+  --color-7: #e6e7f6;
+  --color-8: #ffffff;
+}
+@font-face {
+  font-family: "Montserrat", sans-serif;
+  src: url("./fonts/Montserrat-Regular-webfont.woff2") format("woff2"),
+    url("./fonts/Montserrat-Regular-webfont.woff") format("woff");
+  font-weight: bold;
+  font-display: swap;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+html::-webkit-scrollbar {
+  width: 10px;
+}
+
+html::-webkit-scrollbar-track {
+  border-radius: 10px;
+  // background: rgba(47, 47, 47, 0);
+  // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--color-1);
+  // border-radius: 10px;
+  // box-shadow: 0 0 1px 0px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.container {
+  max-width: 1200px;
+  padding: 0 50px;
+  width: 100%;
+  height: 100%;
+}

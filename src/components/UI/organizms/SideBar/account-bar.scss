@@ -1,0 +1,27 @@
+.account-bar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  width: min-content;
+  height: min-content;
+  background-color: var(--color-8);
+  visibility: hidden;
+  transition: all 0.3s ease;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  &.active {
+    visibility: visible;
+  }
+}
